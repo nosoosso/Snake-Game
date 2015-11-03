@@ -107,10 +107,7 @@ const GameStore = Reflux.createStore({
         }
         let newItemPos = emptyCells.get(Math.floor(Math.random() * (emptyCells.count() - 1)));
 
-        this.data.item = Map({
-            x: newItemPos.get('x'),
-            y: newItemPos.get('y')
-        });
+        this.data.item = newItemPos;
     },
     update: function () {
         if (this.data.scene === 'title' || this.data.scene === 'dead') {

@@ -2,8 +2,8 @@ module.exports = {
     /*
      example:
      boardSize{x:3,y:2}
-     (0,0)(1,0)(2,0)
-     (0,1)(1,2)(2,2)
+     [[0,0,0]
+      [0,0,0]]
      */
     boardSize: {
         x: 16,

@@ -5,7 +5,6 @@ const {List} = require('immutable');
 const GameStore = require('../store/game_store.js');
 
 const Board = React.createClass({
-    mixins: [Reflux.connect(GameStore, 'gameStore')],
     propTypes: {
         board: React.PropTypes.object.isRequired,
         item: React.PropTypes.object.isRequired

@@ -132,10 +132,12 @@ const GameStore = Reflux.createStore({
         }
 
         let snakeHead = this.data.snake.head;
-        if (snakeHead.get('x') < 0 ||
+        if (/* out of board */
+            snakeHead.get('x') < 0 ||
             snakeHead.get('y') < 0 ||
             snakeHead.get('x') >= co.boardSize.x ||
             snakeHead.get('y') >= co.boardSize.y ||
+            /* eat yourself */
             this.data.board.get(snakeHead.get('y')).get(snakeHead.get('x')) > 1
         ) {
             this.data.scene = 'dead';

@@ -5,8 +5,8 @@
   "main": "index.js",
   "scripts": {
     "production": "webpack -p --progress",
-    "develop": "webpack --progress --devtool source-map",
-    "watch": "webpack --progress --watch --devtool source-map",
+    "develop": "webpack -d --progress",
+    "watch": "webpack -d --progress --watch",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
